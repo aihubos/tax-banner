@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>세무사 회원 특가 · 시안 A 세로</title>
+<script src="content.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 3240px; margin: 0; overflow: hidden; background: #fff; }
+  body { font-family: 'Pretendard', sans-serif; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+  .poster { position: relative; width: 1080px; height: 3240px; overflow: hidden; background: #fff; display: flex; flex-direction: column; }
+
+  /* 상단 화이트 영역 */
+  .top { padding: 130px 84px 0; flex: 1; display: flex; flex-direction: column; }
+  .logo { width: 560px; height: auto; display: block; margin-left: -6px; }
+  .rule { height: 6px; background: #E3E6EC; border-radius: 3px; margin: 100px 0 96px; }
+  .badge { align-self: flex-start; display: inline-flex; align-items: center; height: 104px; padding: 0 52px; border-radius: 52px;
+           background: #EAF0FF; color: #1E5EFF; font-size: 42px; font-weight: 700; letter-spacing: -0.02em;
+           box-shadow: 0 4px 10px rgba(16,34,79,0.12); }
+
+  .head { position: relative; margin-top: 76px; }
+  .h { font-size: 214px; line-height: 1.12; font-weight: 800; letter-spacing: -0.03em; color: #10224F; white-space: nowrap; }
+  .h.blue { color: #1E5EFF; }
+
+  .card { position: absolute; right: 0; top: 280px; width: 260px; height: 260px; border-radius: 52px; background: #EAF0FF;
+          box-shadow: 0 10px 24px rgba(16,34,79,0.16); display: flex; align-items: center; justify-content: center; }
+  .card svg { width: 156px; height: 156px; }
+
+  .bar { width: 120px; height: 16px; border-radius: 8px; background: #1E5EFF; margin-top: 76px; }
+  .sub { margin-top: 48px; font-size: 44px; font-weight: 500; color: #5B6478; letter-spacing: -0.02em; line-height: 1.4; }
+
+  /* 하단 블루 블록 */
+  .block { background: #1E5EFF; color: #fff; padding: 120px 84px 100px; display: flex; flex-direction: column; }
+  .lead { font-size: 52px; font-weight: 700; letter-spacing: -0.02em; }
+  .offer-wrap { margin-top: 64px; border: 5px dashed rgba(216,255,106,0.75); border-radius: 36px; padding: 52px 52px 60px; min-height: 380px;
+                display: flex; align-items: center; }
+  .offer { display: block; color: #D8FF6A; font-size: 116px; font-weight: 800; line-height: 1.2; letter-spacing: -0.03em; text-wrap: balance; }
+  .cta { margin-top: 84px; font-size: 104px; font-weight: 800; line-height: 1.2; letter-spacing: -0.03em; }
+  .cta .s { display: block; font-size: 52px; font-weight: 600; letter-spacing: -0.02em; opacity: .85; margin-bottom: 20px; }
+  .foot { margin-top: 96px; border-top: 2px solid rgba(255,255,255,0.35); padding-top: 64px; }
+  .foot b { display: block; font-size: 42px; font-weight: 800; letter-spacing: -0.01em; }
+  .foot span { display: block; margin-top: 14px; font-size: 32px; font-weight: 500; letter-spacing: 0.04em; opacity: .8; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <section class="top">
+    <img class="logo" src="logo.png" alt="AI BUILDERS LAB">
+    <div class="rule"></div>
+    <div class="badge">AI빌더스랩 회원 전용</div>
+
+    <div class="head">
+      <div class="h blue">회원 특가</div>
+      <div class="h">세무사</div>
+      <div class="h">권오성</div>
+      <div class="card" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#1E5EFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 6h22l12 12v36a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4z"/>
+          <path d="M38 6v12h12"/>
+          <path d="M21 26h16M21 34h22"/>
+          <path d="M22 45l6 6 12-12"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="bar"></div>
+    <p class="sub">회원이라면 특가로 세무 상담을 받아보세요</p>
+  </section>
+
+  <section class="block">
+    <p class="lead">세무사 권오성 회원 특가</p>
+    <div class="offer-wrap"><span class="offer" data-slot="offer">[회원 특가 내용 입력]</span></div>
+    <p class="cta"><span class="s">문의는</span>AI빌더스랩<br>운영진에게</p>
+    <div class="foot"><b>AI BUILDERS LAB</b><span>MEMBER BENEFIT</span></div>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="content.js"></script>
+<title>세무사 회원 특가 · 시안 C 가로</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { margin: 0; width: 1200px; height: 400px; overflow: hidden; background: #1E5EFF; }
+  body { font-family: 'Pretendard', sans-serif; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+  .poster {
+    position: relative; width: 1200px; height: 400px; overflow: hidden; background: #1E5EFF; color: #fff;
+    display: flex; align-items: stretch; padding: 40px 44px;
+  }
+
+  /* 왼쪽: 로고 칩 + 하단 표기 */
+  .left { flex: none; width: 260px; display: flex; flex-direction: column; justify-content: space-between; }
+  .chip { width: 260px; height: 108px; background: #fff; border-radius: 24px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px rgba(10,30,100,0.22); }
+  .chip img { width: 216px; height: auto; display: block; }
+  .foot { border-top: 2px solid rgba(255,255,255,0.32); padding-top: 14px; }
+  .foot b { display: block; font-size: 20px; font-weight: 800; letter-spacing: -0.01em; }
+  .foot span { display: block; margin-top: 4px; font-size: 18px; font-weight: 500; letter-spacing: 0.04em; color: rgba(255,255,255,0.75); }
+
+  /* 가운데: 배지 + 회원 특가 */
+  .center { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 24px 0 44px; }
+  .badge {
+    align-self: flex-start; display: inline-flex; align-items: center; height: 44px; padding: 0 22px;
+    background: #EAF0FF; color: #1E5EFF; border-radius: 22px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em;
+  }
+  .mega { margin-top: 14px; font-size: 106px; line-height: 1.0; font-weight: 900; color: #D8FF6A; letter-spacing: -0.05em; white-space: nowrap; }
+  .bar { margin-top: 22px; width: 64px; height: 8px; border-radius: 4px; background: #D8FF6A; }
+
+  /* 오른쪽: 세무사 권오성 + offer + CTA */
+  .right { flex: none; width: 384px; display: flex; flex-direction: column; justify-content: center; }
+  .name { font-size: 46px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em; white-space: nowrap; }
+  .name small { font-size: 46px; font-weight: 600; opacity: 0.9; margin-right: 12px; }
+  .offer-card { margin-top: 18px; background: #fff; border-radius: 20px; padding: 10px; box-shadow: 0 12px 28px rgba(10,30,100,0.25); }
+  .offer-box {
+    min-height: 76px; padding: 10px 18px; border: 3px dashed #9DB6FF; border-radius: 14px; background: #F4F7FF;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+  }
+  .offer-box [data-slot="offer"] { font-size: 26px; line-height: 1.25; font-weight: 800; color: #10224F; letter-spacing: -0.03em; }
+  .cta {
+    margin-top: 16px; height: 56px; border-radius: 28px; background: #D8FF6A; color: #10224F;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    font-size: 22px; font-weight: 800; letter-spacing: -0.03em;
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="left">
+    <div class="chip"><img src="logo.png" alt="AI BUILDERS LAB"></div>
+    <div class="foot"><b>AI BUILDERS LAB</b><span>MEMBER BENEFIT</span></div>
+  </div>
+
+  <div class="center">
+    <span class="badge">AI빌더스랩 회원 전용</span>
+    <div class="mega">회원 특가</div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="right">
+    <div class="name"><small>세무사</small>권오성</div>
+    <div class="offer-card">
+      <div class="offer-box"><span data-slot="offer">[회원 특가 내용 입력]</span></div>
+    </div>
+    <div class="cta">문의는 AI빌더스랩 운영진에게
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10224F" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

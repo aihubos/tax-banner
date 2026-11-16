@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>세무사 권오성 · 회원 특가 (B 가로)</title>
+<script src="content.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 400px; margin: 0; overflow: hidden; background: #fff; }
+  body { font-family: 'Pretendard', sans-serif; color: #10224F; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+
+  .poster { position: relative; width: 1200px; height: 400px; overflow: hidden;
+            background: linear-gradient(180deg, #EAF0FF 0%, #F3F6FF 100%); padding: 24px; }
+
+  /* 티켓 (절취선 위치: 왼쪽에서 744px) */
+  .ticket-wrap { width: 1152px; height: 352px; filter: drop-shadow(0 12px 24px rgba(16, 34, 79, 0.12)); }
+  .ticket { width: 100%; height: 100%; border-radius: 32px; overflow: hidden; display: flex;
+            -webkit-mask: radial-gradient(circle at 744px 0, transparent 22px, #000 23px),
+                          radial-gradient(circle at 744px 100%, transparent 22px, #000 23px);
+            -webkit-mask-composite: source-in; mask-composite: intersect; }
+
+  /* 왼쪽: 프로필 */
+  .left { position: relative; width: 744px; height: 100%; background: #fff; padding: 34px 48px 0 48px; }
+  .left::after { content: ""; position: absolute; right: 14px; top: 34px; bottom: 34px; width: 0;
+                 border-right: 4px dashed #C9D6F5; }
+  .row1 { display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: block; height: 50px; }
+  .badge { display: inline-flex; align-items: center; height: 40px; padding: 0 20px; border-radius: 20px;
+           background: #EAF0FF; color: #1E5EFF; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+  .profile { display: flex; align-items: center; gap: 36px; margin-top: 32px; }
+  .avatar { width: 136px; height: 136px; border-radius: 50%; flex: none;
+            background: linear-gradient(145deg, #3B74FF 0%, #1E5EFF 55%, #1449D6 100%);
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 70px; font-weight: 800; letter-spacing: -0.03em;
+            box-shadow: 0 0 0 8px #EAF0FF; margin-left: 8px; }
+  .role { display: inline-flex; align-items: center; height: 36px; padding: 0 16px; border-radius: 18px;
+          background: #EAF0FF; color: #1E5EFF; font-size: 20px; font-weight: 700; }
+  .name { margin-top: 6px; font-size: 104px; line-height: 1; font-weight: 900; letter-spacing: -0.04em; color: #10224F; }
+  .sub { margin-top: 26px; display: flex; align-items: center; gap: 14px;
+         font-size: 20px; font-weight: 500; color: #4A5672; letter-spacing: -0.02em; }
+  .sub i { display: block; width: 32px; height: 6px; border-radius: 3px; background: #1E5EFF; }
+
+  /* 오른쪽: 특가 */
+  .right { flex: 1; height: 100%; background: #1E5EFF; color: #fff; padding: 32px 40px 0 44px; display: flex; flex-direction: column; }
+  .t-row { display: flex; align-items: baseline; justify-content: space-between; }
+  .t-title { font-size: 44px; font-weight: 800; letter-spacing: -0.03em; }
+  .t-tag { font-size: 18px; font-weight: 700; letter-spacing: 0.1em; color: #D8FF6A; }
+  .offer-box { margin-top: 16px; min-height: 92px; border-radius: 18px; background: #D8FF6A;
+               border: 3px dashed #10224F; padding: 12px 20px;
+               display: flex; align-items: center; justify-content: center; text-align: center; }
+  .offer-box span { font-size: 28px; line-height: 1.2; font-weight: 800; color: #10224F; letter-spacing: -0.03em; }
+  .cta { margin-top: auto; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .cta-text { font-size: 24px; line-height: 1.35; font-weight: 700; letter-spacing: -0.02em; }
+  .cta-text em { font-style: normal; color: #D8FF6A; }
+  .cta-text small { display: block; margin-top: 4px; font-size: 18px; font-weight: 600; opacity: 0.75; letter-spacing: 0.01em; white-space: nowrap; }
+  .arrow { width: 56px; height: 56px; border-radius: 50%; background: #D8FF6A; flex: none;
+           display: flex; align-items: center; justify-content: center; }
+  .arrow svg { width: 28px; height: 28px; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="ticket-wrap">
+    <div class="ticket">
+      <div class="left">
+        <div class="row1">
+          <img class="logo" src="logo.png" alt="AI BUILDERS LAB">
+          <div class="badge">AI빌더스랩 회원 전용</div>
+        </div>
+        <div class="profile">
+          <div class="avatar">권</div>
+          <div>
+            <div class="role">세무사</div>
+            <div class="name">권오성</div>
+          </div>
+        </div>
+        <div class="sub"><i></i>회원이라면 특가로 세무 상담을 받아보세요</div>
+      </div>
+      <div class="right">
+        <div class="t-row">
+          <div class="t-title">회원 특가</div>
+          <div class="t-tag">MEMBER ONLY</div>
+        </div>
+        <div class="offer-box"><span data-slot="offer">[회원 특가 내용 입력]</span></div>
+        <div class="cta">
+          <div class="cta-text">문의는 <em>AI빌더스랩</em> 운영진에게<small>AI BUILDERS LAB · MEMBER BENEFIT</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
