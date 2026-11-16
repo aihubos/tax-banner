@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<script src="content.js"></script>
+<title>세무사 회원 특가 · 시안 C 일렉트릭 레드 세로</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { margin: 0; width: 1080px; height: 3240px; overflow: hidden; background: #fff; }
+  body { font-family: 'Pretendard', sans-serif; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+  .poster { position: relative; width: 1080px; height: 3240px; overflow: hidden; background: #fff; }
+
+  /* ===== 상단 흰 영역 (1/3) ===== */
+  .top { height: 1080px; padding: 104px 96px 0; position: relative; }
+  .logo { display: block; width: 560px; height: auto; }
+  .rule { height: 6px; background: #E3E6EC; border-radius: 3px; margin: 80px 0 88px; }
+  .badge {
+    display: inline-flex; align-items: center; height: 104px; padding: 0 52px;
+    background: #FFE6EA; color: #FF1E3C; border-radius: 52px;
+    font-size: 44px; font-weight: 700; letter-spacing: -0.02em;
+  }
+  .top-row { display: flex; align-items: flex-end; justify-content: space-between; }
+  .top-head { font-size: 80px; line-height: 1.2; font-weight: 800; color: #10224F; letter-spacing: -0.03em; margin-top: 64px; }
+  .top-head b { color: #FF1E3C; font-weight: 800; }
+  .icon-card {
+    width: 220px; height: 220px; border-radius: 48px; background: #FFE6EA;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 24px rgba(26,8,12,0.10);
+  }
+
+  /* ===== 레드 영역 ===== */
+  .blue { position: absolute; left: 0; right: 0; top: 1080px; bottom: 0; background: #FF1E3C; color: #fff; padding: 104px 96px 88px; display: flex; flex-direction: column; }
+  .eyebrow { display: flex; align-items: center; gap: 24px; font-size: 40px; font-weight: 700; color: rgba(255,255,255,0.92); letter-spacing: -0.02em; }
+  .eyebrow i { display: block; width: 72px; height: 10px; border-radius: 5px; background: #FFF16A; }
+  .mega { margin-top: 28px; font-size: 236px; white-space: nowrap; line-height: 1.0; font-weight: 900; color: #FFF16A; letter-spacing: -0.05em; }
+  .name { margin-top: 40px; font-size: 128px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em; }
+  .name small { font-size: 128px; font-weight: 600; opacity: 0.9; margin-right: 28px; }
+  .sub { margin-top: 36px; font-size: 40px; line-height: 1.45; font-weight: 500; color: rgba(255,255,255,0.90); letter-spacing: -0.02em; }
+
+  .offer-card {
+    margin-top: 72px; background: #fff; border-radius: 40px; padding: 48px 56px 56px;
+    box-shadow: 0 24px 48px rgba(120,8,24,0.28);
+  }
+  .offer-label { display: flex; align-items: center; gap: 16px; font-size: 34px; font-weight: 700; color: #FF1E3C; letter-spacing: -0.02em; }
+  .offer-label .dot { width: 18px; height: 18px; border-radius: 50%; background: #FF1E3C; }
+  .offer-box {
+    margin-top: 28px; min-height: 168px; padding: 28px 40px;
+    border: 4px dashed #FFA3B0; border-radius: 28px; background: #FFF3F5;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+  }
+  .offer-box [data-slot="offer"] { font-size: 56px; line-height: 1.25; font-weight: 800; color: #10224F; letter-spacing: -0.03em; }
+
+  .flow-title { margin-top: 76px; font-size: 40px; font-weight: 700; color: rgba(255,255,255,0.92); letter-spacing: -0.02em; display: flex; align-items: center; gap: 24px; }
+  .flow-title i { display: block; width: 72px; height: 10px; border-radius: 5px; background: #FFF16A; }
+  .steps { list-style: none; margin-top: 40px; position: relative; }
+  .steps::before { content: ""; position: absolute; left: 62px; top: 64px; bottom: 64px; width: 4px; background: rgba(255,255,255,0.36); border-radius: 2px; }
+  .step { position: relative; display: flex; align-items: center; gap: 44px; height: 128px; }
+  .step + .step { margin-top: 36px; }
+  .step .ico {
+    flex: none; width: 128px; height: 128px; border-radius: 32px; background: #fff;
+    display: flex; align-items: center; justify-content: center; position: relative;
+  }
+  .step .num {
+    position: absolute; top: -14px; right: -14px; width: 52px; height: 52px; border-radius: 50%;
+    background: #FFF16A; color: #10224F; font-size: 30px; font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step .txt { font-size: 52px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.2; }
+
+  .cta {
+    margin-top: 72px; height: 128px; border-radius: 64px; background: #FFF16A; color: #10224F;
+    display: flex; align-items: center; justify-content: center; gap: 24px;
+    font-size: 48px; font-weight: 800; letter-spacing: -0.03em;
+  }
+
+  .foot { margin-top: auto; border-top: 2px solid rgba(255,255,255,0.40); padding-top: 44px; }
+  .foot b { display: block; font-size: 44px; font-weight: 800; letter-spacing: -0.01em; }
+  .foot span { display: block; margin-top: 10px; font-size: 32px; font-weight: 500; letter-spacing: 0.04em; color: rgba(255,255,255,0.88); }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <section class="top">
+    <img class="logo" src="logo.png" alt="AI BUILDERS LAB">
+    <div class="rule"></div>
+    <div class="top-row">
+      <div>
+        <span class="badge">AI빌더스랩 회원 전용</span>
+        <h2 class="top-head">회원이라면 특가로<br><b>세무 상담</b>을<br>받아보세요</h2>
+      </div>
+      <div class="icon-card" aria-hidden="true">
+        <svg width="112" height="112" viewBox="0 0 48 48" fill="none" stroke="#FF1E3C" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="4" width="30" height="40" rx="5"/>
+          <rect x="14.5" y="10" width="19" height="8" rx="2"/>
+          <circle cx="17" cy="26" r="1.3" fill="#FF1E3C"/><circle cx="24" cy="26" r="1.3" fill="#FF1E3C"/><circle cx="31" cy="26" r="1.3" fill="#FF1E3C"/>
+          <circle cx="17" cy="32.5" r="1.3" fill="#FF1E3C"/><circle cx="24" cy="32.5" r="1.3" fill="#FF1E3C"/><circle cx="31" cy="32.5" r="1.3" fill="#FF1E3C"/>
+          <circle cx="17" cy="39" r="1.3" fill="#FF1E3C"/><circle cx="24" cy="39" r="1.3" fill="#FF1E3C"/><circle cx="31" cy="39" r="1.3" fill="#FF1E3C"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="blue">
+    <div class="eyebrow"><i></i>AI빌더스랩 회원 혜택</div>
+    <div class="mega">회원 특가</div>
+    <div class="name"><small>세무사</small>권오성</div>
+
+    <div class="offer-card">
+      <div class="offer-label"><span class="dot"></span>회원 특가 내용</div>
+      <div class="offer-box"><span data-slot="offer">[회원 특가 내용 입력]</span></div>
+    </div>
+
+    <div class="flow-title"><i></i>이용 방법</div>
+    <ol class="steps">
+      <li class="step">
+        <div class="ico"><span class="num">1</span>
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="#FF1E3C" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="9" width="38" height="30" rx="5"/><circle cx="17" cy="22" r="5"/><path d="M9.5 33c1.6-4 4.4-6 7.5-6s5.9 2 7.5 6"/><path d="M29 20h9M29 27h6"/>
+          </svg>
+        </div>
+        <span class="txt">AI빌더스랩 회원 확인</span>
+      </li>
+      <li class="step">
+        <div class="ico"><span class="num">2</span>
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="#FF1E3C" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 10h32a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3H22l-9 7v-7H8a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z"/><path d="M15 20h18M15 26h11"/>
+          </svg>
+        </div>
+        <span class="txt">운영진에게 문의</span>
+      </li>
+      <li class="step">
+        <div class="ico"><span class="num">3</span>
+          <svg width="64" height="64" viewBox="0 0 48 48" fill="none" stroke="#FF1E3C" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 5h16l9 9v29H13z"/><path d="M29 5v9h9"/><path d="M19 29l5 5 9-10"/>
+          </svg>
+        </div>
+        <span class="txt">세무사 권오성 상담 연결</span>
+      </li>
+    </ol>
+
+    <div class="cta">문의는 AI빌더스랩 운영진에게
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#10224F" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </div>
+
+    <div class="foot"><b>AI BUILDERS LAB</b><span>MEMBER BENEFIT</span></div>
+  </section>
+
+</div>
+</body>
+</html>
