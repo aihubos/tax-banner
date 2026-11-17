@@ -30,9 +30,19 @@
   .blue { position: absolute; left: 0; right: 0; top: 1080px; bottom: 0; background: #6B2BFF; color: #fff; padding: 104px 96px 88px; display: flex; flex-direction: column; }
   .eyebrow { display: flex; align-items: center; gap: 24px; font-size: 40px; font-weight: 700; color: rgba(255,255,255,0.90); letter-spacing: -0.02em; }
   .eyebrow i { display: block; width: 72px; height: 10px; border-radius: 5px; background: #B8F3FF; }
-  .mega { margin-top: 28px; font-size: 236px; white-space: nowrap; line-height: 1.0; font-weight: 900; color: #B8F3FF; letter-spacing: -0.05em; }
-  .name { margin-top: 40px; font-size: 128px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em; }
-  .name small { font-size: 128px; font-weight: 600; opacity: 0.9; margin-right: 28px; }
+  .deal-badge {
+    align-self: flex-start; display: inline-flex; align-items: center; height: 72px; padding: 0 36px; margin-top: 28px;
+    background: #B8F3FF; color: #160A33; border-radius: 36px;
+    font-size: 36px; font-weight: 800; letter-spacing: -0.02em;
+  }
+  .mega { margin-top: 24px; font-weight: 900; color: #B8F3FF; letter-spacing: -0.06em; }
+  .mega .l1, .mega .l2 { display: block; line-height: 0.95; }
+  .mega .l1 { font-size: 152px; }
+  .mega .l2 { font-size: 200px; }
+  .mega em { font-style: normal; color: #160A33;
+             background: linear-gradient(transparent 58%, #D8FF6A 58%, #D8FF6A 94%, transparent 94%); }
+  .name { margin-top: 28px; font-size: 112px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em; }
+  .name small { font-size: 112px; font-weight: 600; opacity: 0.9; margin-right: 24px; }
   .sub { margin-top: 36px; font-size: 40px; line-height: 1.45; font-weight: 500; color: rgba(255,255,255,0.88); letter-spacing: -0.02em; }
 
   .offer-card {
@@ -104,7 +114,8 @@
 
   <section class="blue">
     <div class="eyebrow"><i></i>AI빌더스랩 회원 혜택</div>
-    <div class="mega">회원 특가</div>
+    <div class="deal-badge">회원 특가</div>
+    <h1 class="mega"><span class="l1">수원 <em>1등</em></span><span class="l2">세무사</span></h1>
     <div class="name"><small>세무사</small>권오성</div>
 
     <div class="offer-card">

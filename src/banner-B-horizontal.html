@@ -27,7 +27,7 @@
   .logo { display: block; height: 50px; }
   .badge { display: inline-flex; align-items: center; height: 40px; padding: 0 20px; border-radius: 20px;
            background: #EAF0FF; color: #1E5EFF; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
-  .profile { display: flex; align-items: center; gap: 36px; margin-top: 22px; }
+  .profile { display: flex; align-items: center; gap: 36px; margin-top: 32px; }
   .avatar { width: 136px; height: 136px; border-radius: 50%; flex: none;
             background: linear-gradient(145deg, #3B74FF 0%, #1E5EFF 55%, #1449D6 100%);
             display: flex; align-items: center; justify-content: center;
@@ -35,25 +35,20 @@
             box-shadow: 0 0 0 8px #EAF0FF; margin-left: 8px; }
   .role { display: inline-flex; align-items: center; height: 36px; padding: 0 16px; border-radius: 18px;
           background: #EAF0FF; color: #1E5EFF; font-size: 20px; font-weight: 700; }
-  .name { margin-top: 4px; font-size: 96px; line-height: 1; font-weight: 900; letter-spacing: -0.04em; color: #10224F; }
-  .headline { margin-top: 16px; display: flex; align-items: center; gap: 14px;
-              font-size: 48px; line-height: 1.1; font-weight: 800; color: #10224F; letter-spacing: -0.04em; }
-  .headline i { display: block; width: 32px; height: 8px; border-radius: 4px; background: #1E5EFF; flex: none; }
-  .headline em { font-style: normal; color: #1E5EFF;
-                 background: linear-gradient(transparent 62%, #D8FF6A 62%, #D8FF6A 94%, transparent 94%); }
+  .name { margin-top: 6px; font-size: 104px; line-height: 1; font-weight: 900; letter-spacing: -0.04em; color: #10224F; }
+  .sub { margin-top: 26px; display: flex; align-items: center; gap: 14px;
+         font-size: 20px; font-weight: 500; color: #4A5672; letter-spacing: -0.02em; }
+  .sub i { display: block; width: 32px; height: 6px; border-radius: 3px; background: #1E5EFF; }
 
   /* 오른쪽: 특가 */
   .right { flex: 1; height: 100%; background: #1E5EFF; color: #fff; padding: 32px 40px 0 44px; display: flex; flex-direction: column; }
   .t-row { display: flex; align-items: baseline; justify-content: space-between; }
   .t-title { font-size: 44px; font-weight: 800; letter-spacing: -0.03em; }
   .t-tag { font-size: 18px; font-weight: 700; letter-spacing: 0.1em; color: #D8FF6A; }
-  .offer-box { margin-top: 14px; min-height: 0; border-radius: 18px; background: #D8FF6A;
-               border: 3px dashed #10224F; padding: 10px 16px;
-               display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 2px; }
-  .offer-kicker { font-size: 14px; font-weight: 700; color: #1E5EFF; letter-spacing: -0.02em; }
-  .offer-main { font-size: 26px; line-height: 1.15; font-weight: 800; color: #10224F; letter-spacing: -0.03em; }
-  .offer-main em { font-style: normal; color: #1E5EFF; }
-  .offer-note { font-size: 13px; font-weight: 600; color: #3A4A6A; letter-spacing: -0.02em; }
+  .offer-box { margin-top: 16px; min-height: 92px; border-radius: 18px; background: #D8FF6A;
+               border: 3px dashed #10224F; padding: 12px 20px;
+               display: flex; align-items: center; justify-content: center; text-align: center; }
+  .offer-box span { font-size: 28px; line-height: 1.2; font-weight: 800; color: #10224F; letter-spacing: -0.03em; }
   .cta { margin-top: auto; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .cta-text { font-size: 24px; line-height: 1.35; font-weight: 700; letter-spacing: -0.02em; }
   .cta-text em { font-style: normal; color: #D8FF6A; }
@@ -79,18 +74,14 @@
             <div class="name">권오성</div>
           </div>
         </div>
-        <div class="headline"><i></i><span>수원 <em>1등</em> 세무사</span></div>
+        <div class="sub"><i></i>회원이라면 특가로 세무 상담을 받아보세요</div>
       </div>
       <div class="right">
         <div class="t-row">
           <div class="t-title">회원 특가</div>
           <div class="t-tag">MEMBER ONLY</div>
         </div>
-        <div class="offer-box">
-          <div class="offer-kicker" data-slot="offer-label">AI빌더스랩 회원 전용</div>
-          <div class="offer-main" data-slot="offer-main">월 기장료 <em>10%</em> 할인</div>
-          <div class="offer-note" data-slot="offer-note">(최소 1만원 적용)</div>
-        </div>
+        <div class="offer-box"><span data-slot="offer">[회원 특가 내용 입력]</span></div>
         <div class="cta">
           <div class="cta-text">문의는 <em>AI빌더스랩</em> 운영진에게<small>AI BUILDERS LAB · MEMBER BENEFIT</small></div>
         </div>
