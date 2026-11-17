@@ -4,21 +4,28 @@
 <meta charset="utf-8">
 <script src="content.js"></script>
 <title>세무사 회원 특가 · 시안 C 울트라 바이올렛 세로</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { margin: 0; width: 1080px; height: 3240px; overflow: hidden; background: #fff; }
   body { font-family: 'Pretendard', sans-serif; word-break: keep-all; -webkit-font-smoothing: antialiased; }
   .poster { position: relative; width: 1080px; height: 3240px; overflow: hidden; background: #fff; }
 
-  .top { height: 1080px; padding: 104px 96px 0; position: relative; }
-  .logo { display: block; width: 560px; height: auto; }
-  .rule { height: 6px; background: #E3E6EC; border-radius: 3px; margin: 80px 0 88px; }
+  .top { height: 1080px; padding: 64px 80px 0; position: relative; }
+  .head { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+  .logo { display: block; width: 400px; height: auto; margin-left: -6px; }
+  .top-qr { flex: none; width: 280px; text-align: center; }
+  .top-qr-card { background: #fff; border-radius: 28px; padding: 16px; border: 2px solid #E4E9F2; box-shadow: 0 14px 34px rgba(16,34,79,.08); }
+  .top-qr-card img { width: 248px; height: 248px; display: block; }
+  .top-qr-cap { margin-top: 12px; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; color: #10224F; display: flex; align-items: center; justify-content: center; gap: 8px; -webkit-font-smoothing: auto; }
+  .top-qr-cap .dlogo { height: 32px; width: auto; display: block; }
+  .rule { height: 2px; background: #D9DEE8; margin: 36px 0 0; }
   .badge {
     display: inline-flex; align-items: center; height: 104px; padding: 0 52px;
     background: #EEE8FF; color: #6B2BFF; border-radius: 52px;
     font-size: 44px; font-weight: 700; letter-spacing: -0.02em;
   }
-  .top-row { display: flex; align-items: flex-end; justify-content: space-between; }
+  .top-row { display: flex; align-items: flex-end; justify-content: space-between; margin-top: 80px; }
   .top-head { font-size: 80px; line-height: 1.2; font-weight: 800; color: #10224F; letter-spacing: -0.03em; margin-top: 64px; }
   .top-head b { color: #6B2BFF; font-weight: 800; }
   .icon-card {
@@ -97,7 +104,13 @@
 <div class="poster">
 
   <section class="top">
-    <img class="logo" src="logo.png" alt="AI BUILDERS LAB">
+    <div class="head">
+      <img class="logo" src="logo.png" alt="AI BUILDERS LAB">
+      <div class="top-qr">
+        <div class="top-qr-card"><img src="daangn-qr.png" width="248" height="248" alt="당근모임 바로가기 QR"></div>
+        <p class="top-qr-cap"><img class="dlogo" src="daangn-logo.svg" alt="당근">모임 바로가기</p>
+      </div>
+    </div>
     <div class="rule"></div>
     <div class="top-row">
       <div>
