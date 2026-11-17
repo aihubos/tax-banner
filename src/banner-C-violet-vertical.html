@@ -35,31 +35,35 @@
     background: #B8F3FF; color: #160A33; border-radius: 36px;
     font-size: 36px; font-weight: 800; letter-spacing: -0.02em;
   }
-  .mega { margin-top: 24px; font-weight: 900; color: #B8F3FF; letter-spacing: -0.06em; }
-  .mega .l1, .mega .l2 { display: block; line-height: 0.95; }
-  .mega .l1 { font-size: 152px; }
-  .mega .l2 { font-size: 200px; }
-  .mega em { font-style: normal; color: #D8FF6A; background: none; font-size: 1.12em;
-             text-shadow: 0 0 0.08em rgba(216,255,106,0.95), 0 0 0.28em rgba(216,255,106,0.55), 0 0 0.55em rgba(216,255,106,0.35); }
-  .name { margin-top: 28px; font-size: 112px; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em; }
-  .name small { font-size: 112px; font-weight: 600; opacity: 0.9; margin-right: 24px; }
-  .sub { margin-top: 36px; font-size: 40px; line-height: 1.45; font-weight: 500; color: rgba(255,255,255,0.88); letter-spacing: -0.02em; }
+  .stats {
+    margin-top: 36px; font-size: 46px; line-height: 1.25; font-weight: 800;
+    color: #D8FF6A; letter-spacing: -0.02em;
+  }
+  .headline {
+    margin-top: 28px; font-size: 100px; line-height: 1.15; font-weight: 800;
+    color: #fff; letter-spacing: -0.04em;
+  }
+  .headline span { display: block; }
 
   .offer-card {
-    margin-top: 72px; background: #fff; border-radius: 40px; padding: 48px 56px 56px;
+    margin-top: 64px; background: #fff; border-radius: 40px; padding: 48px 56px 56px;
     box-shadow: 0 24px 48px rgba(40,10,120,0.28);
   }
   .offer-label { display: flex; align-items: center; gap: 16px; font-size: 34px; font-weight: 700; color: #6B2BFF; letter-spacing: -0.02em; }
-  .offer-label .dot { width: 18px; height: 18px; border-radius: 50%; background: #6B2BFF; }
+  .offer-label .dot { flex: none; width: 18px; height: 18px; border-radius: 50%; background: #6B2BFF; }
+  .offer-label small { font-weight: 600; font-size: 1em; }
   .offer-box {
-    margin-top: 28px; min-height: 168px; padding: 28px 40px;
+    margin-top: 28px; padding: 8px 36px;
     border: 4px dashed #C4B0FF; border-radius: 28px; background: #F6F3FF;
-    display: flex; align-items: center; justify-content: center; text-align: center;
+    display: flex; flex-direction: column;
   }
-  .offer-stack { display: flex; flex-direction: column; align-items: center; gap: 12px; }
-  .offer-main { font-size: 60px; line-height: 1.2; font-weight: 800; color: #10224F; letter-spacing: -0.03em; }
-  .offer-main em { font-style: normal; color: #6B2BFF; }
-  .offer-note { font-size: 32px; font-weight: 600; color: #55607A; letter-spacing: -0.02em; }
+  .price-row {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px; padding: 32px 8px;
+  }
+  .price-row + .price-row { border-top: 2px solid #E0D6FF; }
+  .price-name { font-size: 44px; font-weight: 700; color: #10224F; letter-spacing: -0.02em; }
+  .price-val { font-size: 68px; font-weight: 800; color: #6B2BFF; letter-spacing: -0.03em; white-space: nowrap; }
 
   .flow-title { margin-top: 76px; font-size: 40px; font-weight: 700; color: rgba(255,255,255,0.90); letter-spacing: -0.02em; display: flex; align-items: center; gap: 24px; }
   .flow-title i { display: block; width: 72px; height: 10px; border-radius: 5px; background: #B8F3FF; }
@@ -115,16 +119,14 @@
   <section class="blue">
     <div class="eyebrow"><i></i>AI빌더스랩 회원 혜택</div>
     <div class="deal-badge">회원 특가</div>
-    <h1 class="mega"><span class="l1">수원 <em>1등</em></span><span class="l2">세무사</span></h1>
-    <div class="name"><small>세무사</small>권오성</div>
+    <p class="stats">신고건수 4,000건+, 누적절세액 5억+</p>
+    <h1 class="headline"><span>AI빌더스랩 제휴 업체</span><span>세무사 권오성</span></h1>
 
     <div class="offer-card">
-      <div class="offer-label"><span class="dot"></span><span data-slot="offer-label">AI빌더스랩 회원 전용</span></div>
+      <div class="offer-label"><span class="dot"></span><span>AI빌더스랩 회원 전용 특가 <small>(부가세포함)</small></span></div>
       <div class="offer-box">
-        <div class="offer-stack">
-          <div class="offer-main" data-slot="offer-main">월 기장료 <em>10%</em> 할인</div>
-          <div class="offer-note" data-slot="offer-note">(최소 1만원 적용)</div>
-        </div>
+        <div class="price-row"><span class="price-name">개인 기장료</span><span class="price-val">66,000원 ~</span></div>
+        <div class="price-row"><span class="price-name">법인 기장료</span><span class="price-val">118,800원 ~</span></div>
       </div>
     </div>
 
