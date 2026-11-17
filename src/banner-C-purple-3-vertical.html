@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>세무사 권오성 · 보라 3 리본형 세로</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { margin: 0; width: 1080px; height: 3240px; overflow: hidden; background: #fff; }
+  body { font-family: 'Pretendard', sans-serif; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+  .poster { position: relative; width: 1080px; height: 3240px; overflow: hidden; background: #fff; display: flex; flex-direction: column; }
+
+  .top { flex: none; height: 1080px; padding: 96px 80px 0; }
+  .logo { display: block; width: 520px; height: auto; }
+  .rule { height: 6px; background: #E3E6EC; border-radius: 3px; margin: 72px 0 64px; }
+  .headline .l1 { display: block; font-size: 152px; line-height: 1.0; font-weight: 900; color: #160A33; letter-spacing: -0.06em; }
+  .headline .l2 { display: block; margin-top: 8px; font-size: 268px; line-height: 0.92; font-weight: 900; color: #6B2BFF; letter-spacing: -0.07em; }
+  .name { margin-top: 36px; font-size: 56px; line-height: 1.1; font-weight: 800; color: #160A33; letter-spacing: -0.03em; }
+  .name small { font-size: 56px; font-weight: 600; opacity: 0.7; margin-right: 16px; }
+
+  .ribbon { position: relative; z-index: 2; flex: 1; background: #B8F3FF; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 80px; }
+  .ribbon::before, .ribbon::after {
+    content: ""; position: absolute; bottom: -88px; width: 0; height: 0;
+    border-top: 88px solid #3A18B0;
+  }
+  .ribbon::before { left: 0; border-right: 140px solid transparent; }
+  .ribbon::after { right: 0; border-left: 140px solid transparent; }
+  .r-label { font-size: 52px; font-weight: 800; color: #160A33; letter-spacing: -0.03em; text-align: center; line-height: 1.35; }
+  .r-mega { margin-top: 16px; font-size: 460px; line-height: 0.88; font-weight: 900; color: #6B2BFF; letter-spacing: -0.08em; }
+
+  .bottom { position: relative; z-index: 1; flex: none; height: 560px; background: #6B2BFF; color: #fff; padding: 120px 80px 64px; display: flex; flex-direction: column; }
+  .cta {
+    height: 120px; border-radius: 60px; background: #B8F3FF; color: #160A33;
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+    font-size: 44px; font-weight: 800; letter-spacing: -0.03em;
+  }
+  .foot { margin-top: auto; border-top: 2px solid rgba(255,255,255,0.36); padding-top: 36px; }
+  .foot b { display: block; font-size: 40px; font-weight: 800; letter-spacing: -0.01em; }
+  .foot span { display: block; margin-top: 8px; font-size: 28px; font-weight: 500; letter-spacing: 0.04em; color: rgba(255,255,255,0.82); }
+</style>
+</head>
+<body>
+<div class="poster">
+  <section class="top">
+    <img class="logo" src="logo.png" alt="AI BUILDERS LAB">
+    <div class="rule"></div>
+    <h1 class="headline"><span class="l1">수원 1등</span><span class="l2">세무사</span></h1>
+    <p class="name"><small>세무사</small>권오성</p>
+  </section>
+  <section class="ribbon">
+    <div class="r-label">AI빌더스랩 회원 첫 세무상담</div>
+    <div class="r-mega">무료</div>
+  </section>
+  <section class="bottom">
+    <div class="cta">문의는 AI빌더스랩 운영진에게
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#160A33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </div>
+    <div class="foot"><b>AI BUILDERS LAB</b><span>MEMBER BENEFIT</span></div>
+  </section>
+</div>
+</body>
+</html>
