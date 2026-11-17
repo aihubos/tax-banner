@@ -46,7 +46,10 @@
     border: 4px dashed #9CC400; border-radius: 28px; background: #F3FFD1;
     display: flex; align-items: center; justify-content: center; text-align: center;
   }
-  .offer-box [data-slot="offer"] { font-size: 56px; line-height: 1.25; font-weight: 800; color: #10224F; letter-spacing: -0.03em; }
+  .offer-stack { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .offer-main { font-size: 60px; line-height: 1.2; font-weight: 800; color: #10224F; letter-spacing: -0.03em; }
+  .offer-main em { font-style: normal; color: #10224F; }
+  .offer-note { font-size: 32px; font-weight: 600; color: #55607A; letter-spacing: -0.02em; }
 
   .flow-title { margin-top: 76px; font-size: 40px; font-weight: 700; color: #10224F; letter-spacing: -0.02em; display: flex; align-items: center; gap: 24px; }
   .flow-title i { display: block; width: 72px; height: 10px; border-radius: 5px; background: #10224F; }
@@ -105,8 +108,13 @@
     <div class="name"><small>세무사</small>권오성</div>
 
     <div class="offer-card">
-      <div class="offer-label"><span class="dot"></span>회원 특가 내용</div>
-      <div class="offer-box"><span data-slot="offer">[회원 특가 내용 입력]</span></div>
+      <div class="offer-label"><span class="dot"></span><span data-slot="offer-label">AI빌더스랩 회원 전용</span></div>
+      <div class="offer-box">
+        <div class="offer-stack">
+          <div class="offer-main" data-slot="offer-main">월 기장료 <em>10%</em> 할인</div>
+          <div class="offer-note" data-slot="offer-note">(최소 1만원 적용)</div>
+        </div>
+      </div>
     </div>
 
     <div class="flow-title"><i></i>이용 방법</div>
